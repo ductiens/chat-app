@@ -10,7 +10,7 @@ const App = () => {
   const { authUser } = useContext(AuthContext); //sử dụng authUser để quyết định điều hướng (routing) giữa các trang
 
   return (
-    <div className="bg-[url('/src/assets/bgImage.svg')] bg-contain">
+    <div className="bg-[url('/bgImage.svg')] bg-contain">
       <Toaster />
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
